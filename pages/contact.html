@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sylvain Garcia portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="../img/logoPortfolio.svg" rel="icon" sizes="16x16" type="image/png">
+</head>
+<body data-barba="wrapper" class="bg-gradient-to-r from-[#331A42] to-[#3B3240]">
+    <div class="load-container">
+        <div class="loading-screen">
+            <img src="../img/logoPortfolio.svg" alt="LogoPortfolio" class="logo">
+        </div>
+    </div>
+    <header id="header" class="flex justify-center mt-2 lg:mt-4 xl:mt-6">
+        <div class="w-full lg:w-1/2">
+            <a href="/public"><img src="../img/logoPortfolio.svg" alt="logo" id="logo" class="w-32 rounded-full ml-12 -mt-4"></a>
+        </div>    
+        <div class="flex items-center w-5/6 lg:w-4/6 h-12 lg:h-24">
+            <ul class="w-full flex items-center justify-around text-center text-white md:text-lg lg:text-xl xl:text-2xl">
+                <li class="btn md:text-lg lg:text-xl xl:text-3xl font-semibold border border-white border-2 border-solid p-4 rounded hover:bg-white hover:text-[#331A42]"><a id="about" href="/pages/about.html">A propos</a></li>
+                <li class="btn md:text-lg lg:text-xl xl:text-3xl font-semibold border border-white border-2 border-solid p-4 rounded hover:bg-white hover:text-[#331A42]"><a id="projects" href="/pages/projects.html">Projets</a></li>
+                <li class="btn md:text-lg lg:text-xl xl:text-3xl font-semibold border border-white border-2 border-solid p-4 rounded hover:bg-white hover:text-[#331A42]"><a id="contact" href="/pages/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <section data-barba="container" data-barba-namespace="about">
+        <main class="grid grid-cols-2 gap-2">
+            <div class="w-full h-full text-white ml-24 mt-32">
+                <h1 class="text-8xl font-bold">Sylvain Garcia</h1>
+                <h3 class="text-6xl font-semibold ml-12 mt-8">Développeur web</h3>
+            </div>
+            <div class="text-white text-center text-4xl flex flex-col items-center mt-32">
+                <p>Contactez moi : </p>
+                <div class=" flex flex-col border border-solid border-2 border-white rounded-xl w-2/3 p-4 gap-y-8 mt-6">
+                    <p>Email : <a href="mailto:sylvain.garcia72@sfr.fr?subject=Contact portfolio">sylvain.garcia72@sfr.fr</a></p>
+                    <p>Téléphone : <a href="tel:+33637205042">06-37-20-50-42</a></p>
+                </div>
+            </div>
+        </main>
+        <div class="text-center mt-36">
+            <a href="../CvSylvainGarciaForma.pdf" download="CV-Sylvain-Garcia.pdf" class="bg-[#C8E36C] border border-solid border-2 border-white text-white text-4xl rounded-xl p-6">Télécharger mon CV !</a>
+        </div>
+    </section>
+    <canvas  class="background"></canvas>
+    <script src="../../assets/main.js" type="module"></script>
+</body>
+</html>
